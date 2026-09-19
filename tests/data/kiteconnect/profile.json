@@ -1,0 +1,35 @@
+{
+	"status": "success",
+	"data": {
+		"user_id": "AO1234",
+		"user_type": "investor",
+		"email": "aanshiomar31@gmail.com",
+		"user_name": "Aanshi Omar",
+		"user_shortname": "Aanshi",
+		"broker": "ZERODHA",
+		"exchanges": [
+			"BSE",
+			"BFO",
+			"NFO",
+			"MCX",
+			"CDS",
+			"NSE"
+		],
+		"products": [
+			"BO",
+			"CNC",
+			"CO",
+			"MIS",
+			"NRML"
+		],
+		"order_types": [
+			"LIMIT",
+			"MARKET",
+			"SL",
+			"SL-M"
+		],
+		"meta": {
+			"demat_consent": "physical"
+		}
+	}
+}

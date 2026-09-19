@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "alpha-route"
+version = "1.0.0"
+description = "A powerful Python library to place stock orders of different types and make algorithmic trading easy"
+authors = ["Aanshi Omar <aanshiomar31@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/aanshiomar31-oss/alpha-route"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pendulum = {extras = ["test"], version = "^3.0.0"}
+pydantic = "^2.0.0"
+PyYAML = "^6.0.0"
+sqlite-utils = "^3.22.1"
+pyotp = "^2.9.0"
+mkdocs-autorefs = "^1.4.2"
+
+[tool.poetry.group.server.dependencies]
+fastapi = "^0.104.0"
+
+[tool.poetry.group.test.dependencies]
+coverage = "^6.0.2"
+pytest-watch = "^4.2.0"
+httpx = "^0.23.3"
+pytest = "^8.3.3"
+
+[tool.poetry.group.brokers.dependencies]
+kiteconnect = "^5.0.0"
+requests = "^2.25.0"
+ks-api-client = {git = "https://github.com/osparamatrix/ks-orderapi-python.git"}
+nodriver = "^0.48"
+requests-oauthlib = "^2.0.0"
+pandas = "^2.2.3"
+numpy = "<2.0.0"
+breeze-connect = "^1.0.58"
+
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.6.15"
+mkdocstrings = "^0.29.1"
+mkdocstrings-python = "^1.16.12"
+mkdocs-autorefs = "^1.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
